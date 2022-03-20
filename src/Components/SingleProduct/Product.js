@@ -20,6 +20,14 @@ const Product = (props) => {
             alt=""
             style={{ width: "200px", height: "200px" }}
           />
+          <h2>{props.pd.title.slice(0, 10)}</h2>
+          <div className="d-flex justify-content-around">
+            <button className="btn btn-success me-2" onClick={props.cart}>
+              AddToCart
+            </button>
+            <button className="btn btn-danger me-2">Delete</button>
+            <ProductModal productinfo={props.pd}></ProductModal>
+          </div>
         </div>
       </div>
     </div>
