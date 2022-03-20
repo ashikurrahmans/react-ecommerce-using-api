@@ -1,0 +1,16 @@
+.menu-container {
+  display: flex;
+  justify-content: end;
+}
+.menu-container li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.pad {
+  padding: 20px;
+}
+.menu-bg {
+  background: #000;
+  color: #ffffff;
+}
